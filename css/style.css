@@ -1,0 +1,123 @@
+/* 
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* body {
+	line-height: 1;
+} */
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Css Clearfix */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* alignment */
+.alignleft{float: left;}
+.alignright{float: right;}
+
+/* reset css end  */
+
+/* Start Page  */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+a,a:hover{
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+a:focus{outline: none;}
+h2{font-size: 26px;font-weight: bold;}
+p{line-height: 20px;font-size: 13px;color:#262626}
+
+.container{max-width: 1200px;margin:0 auto;padding:0 30px;}
+header{position: relative;}
+header .main-header{display: flex;justify-content: space-between;align-items: center;padding:36px 25px;flex-wrap: wrap;background:#18375a}
+header .main-header a{font-size: 34px;color:#FFFFFF;font-weight: bold;text-decoration: none;display: block;}
+header .main-header a.call{color:#FFFFFF;font-size: 24px;font-weight: 400;}
+header nav ul{display:flex;background-color: #262626;flex-wrap: wrap;transition: all 0.4s ease-in-out;} 
+header nav ul li{list-style-type: none;}
+header nav ul li a{color:#ffffff;text-decoration: none;min-width: 100px;text-align: center;padding:16px 25px;display:block;font-size: 15px;}
+header nav ul li.active{background-color: #f49722 ;}
+header nav ul li a:hover{background-color: #f49722 ;}
+header nav ul li a:focus{background-color: #f49722 ;}
+header .fa-bars,header .fa-times{display: none;position: absolute;}
+header .overlay{display: none;transition: all 0.4s ease-in-out;}
+
+.content{display:flex;padding:30px 0;}
+.left-content{flex:0 0 263px;background-color: #dddddd;padding: 25px;max-width: 263px;}
+.left-content h1{font-size: 26px;font-weight: bold;padding-bottom: 5px;margin-bottom: 20px;border-bottom: 1px solid #8c8c8c;color:#262626}
+.left-content ul li{list-style-type: none;padding-bottom: 10px;padding-left: 17px;position: relative;}
+.left-content ul li::before{content: "";position: absolute;top:7px;left: 3px;background-color: #262626;width:6px;height:6px;}
+.left-content ul li a{font-size: 14px;color:#262626;text-decoration: none;}
+.left-content ul li ul.sub-nav{padding-left:6px;padding-top: 10px;}
+.left-content ul li ul.sub-nav li:last-child{padding-bottom: 0;}
+.right-wrapper{padding-left: 30px;}
+.right-content{max-width:847px;background-color: #f4f4f4;padding: 25px;}
+.right-content  h2{color:#262626;padding-bottom: 5px;border-bottom: 1px solid #c8c8c8;margin-bottom: 25px;}
+.right-content  p{padding-bottom: 25px;}
+.right-content  h3{font-size: 20px;color:#262626;font-weight: bold;padding-bottom: 10px;}
+.right-content  p.sub-title{padding-bottom: 10px}
+.right-content  ul li{list-style-type: none;padding-bottom: 5px;line-height: 20px;padding-left: 17px;font-size: 13px;color:#262626;position: relative;}
+.right-content  ul li::before{content: '';position: absolute;width:6px;height: 6px; background-color: #262626;top: 7px;left: 0;display: block;}
+.right-content  ul li:last-child{padding-bottom: 0;}
+
+footer{background-color: #18375a;color:#ffffff;text-align: center;font-size: 14px;padding:17px 0;}
+
+/* End page  */
